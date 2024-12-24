@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.navbar{
+    background-color: blue;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        position: sticky;
+        position: 0;
+        z-index: 10;
+}
+
+.logo{
+    color: azure;
+    margin-left: 120px;
+    font-size: 23px;
+}
+
+ul{
+    padding-right: 90px;
+}
+
+ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0px 15px;
+    
+}
+
+ul li a{
+    color: azure;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+ul li a::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    left: 0;
+    background-color: azure;
+    transition: all 0.3s linear;
+}
+
+ul li a:hover::after{
+    background-color: azure;
+    width: 100%;
+}
+
+.icons{
+    
+}
+
+.main{
+    /* margin-top:50px; */
+}
+
+#home{
+    background-color: chartreuse;
+    width: 100vw;
+    height: 100vh;
+    /* margin-top:50px; */
+    /* position: absolute; */
+}
+
+#skills{
+    background-color: orange;
+    width: 100vw;
+    height: 100vh; 
+}
+
+#project{
+    background-color: red;
+    width: 100vw;
+    height: 100vh; 
+}
+
+#contact{
+    background-color: green;
+    width: 100vw;
+    height: 100vh; 
+}
+
+/* @media only screen and (max-width:700px)  {
+    
+    .logo{
+        margin: 40px;
+    }
+
+    ul{
+        display: none;
+    }
+
+    
+} */
+
